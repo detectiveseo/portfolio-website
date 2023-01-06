@@ -55,7 +55,7 @@ nav ul{
 
 nav ul li {
     list-style: none;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 nav ul li a{
@@ -112,6 +112,12 @@ nav ul li a{
     border-radius: 7px;
 }
 
+.hero-info .btn-contact{
+    background-color: transparent;
+    border: 1px solid #FD6E0A;
+    color: #FD6E0A;
+}
+
 /*hero moderl image*/
 .hero .model-img{
     width: 40%;
@@ -131,6 +137,7 @@ nav ul li a{
     background-color: #FFF8F3;
     margin: 100px 250px;
     padding: 130px;
+    border-radius: 10px;
 }
 
 .about-me h2{
@@ -139,8 +146,31 @@ nav ul li a{
     margin-bottom: 30px;
 }
 
-.about-me{
+.about-me p{
     font-size: 18px;
     color: #757575;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-me .info-about{
+    display: flex;
+}
+
+.about-me .info-about > div{
+    margin: 0px 30px;
+    text-align: center;
+}
+
+.about-me .info-about > div h5{
+    font-size: 18px;
+    color: #757575;
+    line-height: 30px;
+}
+
+.about-me .info-about > div h4{
+    font-size: 20px;
+    color: #494949;
     line-height: 30px;
 }
