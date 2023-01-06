@@ -178,7 +178,7 @@ nav ul li a{
     line-height: 30px;
 }
 .what-I-Do{
-    margin: 100px 250px;
+    margin: 200px 250px;
 }
 
 .what-I-Do .profession-box{
@@ -189,4 +189,32 @@ nav ul li a{
 .what-I-Do .profession-box > div{
     padding: 20px;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.116);
+}
+.profession-box h5{
+    margin: 20px 0px;
+    font-size: 22px;
+}
+
+/*summary info Style*/
+.summary{
+    margin: 70px 250px;
+}
+.summary-info{
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+}
+.summary-info > div{
+    width: 50%;
+}
+.summary-info-box{
+    margin-top: 20px;
+}
+.summary-info h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.summary-info p{
+    margin: 20px 0px;
 }
