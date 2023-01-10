@@ -228,7 +228,7 @@ nav ul li a{
 
 
 /*Mobile responsive*/
-@media screen and (max-width: 400px ){
+@media screen and (max-width: 600px ){
     /*Header Mobile responsive*/
     header{
         padding: 10px;
@@ -294,7 +294,7 @@ nav ul li a{
 }
 
 /*Tablate Devices Responsive*/
-@media screen and (min-width: 401px) and (max-width: 820px){
+@media screen and (min-width: 601px) and (max-width: 820px){
     /*Header tablet responsive*/
     header{
         padding: 20px;
