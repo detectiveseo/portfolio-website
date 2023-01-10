@@ -45,6 +45,7 @@ header{
 
 nav{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -80,12 +81,13 @@ nav ul li a{
 /*Hero section Style*/
 .hero{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     background-color: #FFF8F3;
     background-image: url(./img/header_bg.png), url(./img/developer.png);
     background-repeat: no-repeat;
     background-position: right bottom, left center;
+    overflow: hidden;
 }
 
 
@@ -158,12 +160,16 @@ nav ul li a{
 }
 
 .about-me .info-about{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .about-me .info-about > div{
     margin: 0px 30px;
     text-align: center;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.123);
+    padding: 30px;
+    border-radius: 5px;
 }
 
 .about-me .info-about > div h5{
@@ -182,7 +188,8 @@ nav ul li a{
 }
 
 .what-I-Do .profession-box{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-top: 70px;
 }
@@ -217,4 +224,122 @@ nav ul li a{
 
 .summary-info p{
     margin: 20px 0px;
+}
+
+
+/*Mobile responsive*/
+@media screen and (max-width: 400px ){
+    /*Header Mobile responsive*/
+    header{
+        padding: 10px;
+    }
+
+    /*hero section mobile responsive*/
+    .hero{
+        height: fit-content;
+        flex-direction: column;
+        background-image: url(./img/header_bg.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .hero-info{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .hero-info h1{
+        font-size: 60px;
+    }
+    .hero-info h3{
+        font-size: 35px;
+    }
+    .hero .model-img{
+        width: 100%;
+    }
+
+    /*About me section mobile responsive*/
+    .about-me{
+        margin: 20px;
+        padding: 10px;
+        padding-bottom: 30px;
+        height: fit-content;
+    }
+    .about-me .info-about{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-me .info-about > div h4{
+        font-size: 18px;
+    }
+
+    /* What I do section mobile responsive*/
+    .what-I-Do{
+        margin: 20px;
+        padding: 10px;
+    }
+    .what-I-Do .profession-box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*Summary of my resume*/
+    .summary{
+        margin: 20px;
+    }
+    .summary-info{
+        padding-top: 0px;
+        flex-direction: column;
+    }
+    .summary-info > div{
+        width: 100%;
+    }
+}
+
+/*Tablate Devices Responsive*/
+@media screen and (min-width: 401px) and (max-width: 820px){
+    /*Header tablet responsive*/
+    header{
+        padding: 20px;
+    }
+
+    .hero{
+        height: fit-content;
+        flex-direction: column;
+    }
+    .hero-info{
+        width: 100%;
+        padding-top: 100px;
+        padding-right: 150px;
+        overflow: hidden;
+        
+    }
+    .hero .model-img{
+        width: 100%;
+    }
+
+    /*about me section tablate responsive*/
+    .about-me{
+        margin: 30px;
+        padding: 30px;
+        height: fit-content;
+    }
+
+    .about-me .info-about{
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 30px;
+    }
+
+    /*what I do section tablate responsive*/
+    .what-I-Do{
+        margin: 20px;
+        padding: 20px;
+    }
+    .what-I-Do .profession-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*Summary section tablate responsive*/
+    .summary{
+        margin: 20px;
+        padding: 10px;
+
+    }
 }
